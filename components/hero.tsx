@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Twitter } from "lucide-react";
+import { SiGithub, SiTwitter } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 
 export function Hero() {
@@ -70,7 +70,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2.5 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[13px] transition-all duration-200 hover:border-[#C41E3A] hover:bg-[rgba(196,30,58,0.08)]"
           >
-            <Github size={16} />
+            <SiGithub size={16} />
             GitHub
           </Link>
           <Link
@@ -79,7 +79,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2.5 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[13px] transition-all duration-200 hover:border-[#C41E3A] hover:bg-[rgba(196,30,58,0.08)]"
           >
-            <Twitter size={16} />
+            <SiTwitter size={16} />
             Twitter
           </Link>
         </div>
