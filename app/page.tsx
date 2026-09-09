@@ -124,7 +124,7 @@ function Hero() {
         <div style={{marginTop:72}}>
           <div style={{textAlign:"center",fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.32em",color:"rgba(254,202,202,0.55)",marginBottom:18}}>{"── BUILT WITH ──"}</div>
           <div style={{display:"flex",justifyContent:"center",gap:10,flexWrap:"wrap"}}>
-            {["Next.js","Python","React","Claude API","Vercel","AI/ML"].map((t)=>(
+            {["Next.js","React","Tailwind","Vercel"].map((t)=>(
               <span key={t} style={{padding:"8px 14px",borderRadius:999,fontFamily:"var(--mono)",fontSize:12,letterSpacing:"0.04em",color:"rgba(245,241,232,0.9)",background:"rgba(0,0,0,0.35)",border:"1px solid rgba(254,202,202,0.18)"}}>{t}</span>
             ))}
           </div>
@@ -146,7 +146,7 @@ function About() {
           <div style={{maxWidth:280,fontFamily:"var(--mono)",fontSize:12,letterSpacing:"0.06em",color:"var(--bone-deep)",lineHeight:1.7,textAlign:"right" as const}}>ERAYCANDAN.DEV<br/>EST. 2005 — TURKIYE<br/>CURRENTLY: BUILDING</div>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:60,marginBottom:80}}>
-          {[{tag:"ORIGIN",text:["I've been writing code for ","5 years",". Started young, stayed consistent. I don't come from a bootcamp or a big tech background — ","I come from pure curiosity and stubbornness."," Every tool I use, I learned by building something real with it."],special:1,specialStyle:{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:24,color:"var(--bone)"}},{tag:"TODAY",text:["Right now I'm in my ","foundation phase"," — mastering the fundamentals, shipping real products, and building a track record. ","I believe the best developers aren't the ones who know the most. They're the ones who ship the most."],special:1,specialStyle:{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:24,color:"var(--crimson-400)"}}].map((col:any,idx)=>(
+          {[{tag:"ORIGIN",text:["I started writing code around ","age 15",". These days most of what I build happens together with AI tools like Claude — ","not instead of learning, but as how I learn."," I don't come from a bootcamp or a big tech background, just curiosity and a habit of finishing what I start."],special:1,specialStyle:{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:24,color:"var(--bone)"}},{tag:"TODAY",text:["Right now I'm in my ","foundation phase"," — a software engineering student building real projects on the side and figuring out what's worth building next. ","I'd rather ship something small and real than plan something big and imaginary."],special:1,specialStyle:{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:24,color:"var(--crimson-400)"}}].map((col:any,idx)=>(
             <div key={idx}>
               <div style={{fontFamily:"var(--mono)",fontSize:11,letterSpacing:"0.2em",color:"var(--crimson-500)",marginBottom:18}}>{"↳ "+col.tag}</div>
               <p style={{fontSize:19,lineHeight:1.65,color:"var(--bone)",margin:0}}>
@@ -156,7 +156,7 @@ function About() {
           ))}
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(3, 1fr)",gap:16}}>
-          {[{big:"5+",suffix:"years",label:"coding experience",note:"Started age 15. Never stopped."},{big:"20",suffix:"y/o",label:"building seriously",note:"Old enough to know, young enough to risk."},{big:"Day 1",suffix:"",label:"of something bigger",note:"The compounding has just begun."}].map((s,idx)=>(
+          {[{big:"5+",suffix:"years",label:"since I started coding",note:"Started age 15, increasingly AI-assisted since."},{big:"20",suffix:"y/o",label:"software engineering student",note:"Building on the side while I study."},{big:"Day 1",suffix:"",label:"of something bigger",note:"The compounding has just begun."}].map((s,idx)=>(
             <div key={idx} style={{padding:32,borderRadius:18,position:"relative",overflow:"hidden",background:"linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))",border:"1px solid rgba(255,255,255,0.07)"}}>
               <div style={{position:"absolute",top:16,right:16,fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.16em",color:"var(--bone-deep)"}}>0{idx+1}</div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginBottom:14}}>
@@ -193,7 +193,7 @@ function AevisLab() {
               {"AevisLab is the software studio I'm building from the "}<span style={{color:"var(--crimson-400)"}}>ground up</span>.{" The vision is simple: "}
               <span style={{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:32,color:"var(--bone)"}}>build AI-native products</span>{" that actually solve problems."}
             </div>
-            <div style={{marginTop:28,fontSize:18,lineHeight:1.6,color:"var(--bone-mute)"}}>{"Not demos. Not experiments. "}<span style={{color:"var(--bone)"}}>Real tools, real users, real impact.</span></div>
+            <div style={{marginTop:28,fontSize:18,lineHeight:1.6,color:"var(--bone-mute)"}}>{"Still early — no big user base yet. "}<span style={{color:"var(--bone)"}}>Built to solve real problems, not just to demo.</span></div>
             <div style={{marginTop:36,padding:"24px 28px",borderLeft:"2px solid var(--crimson-600)",background:"linear-gradient(90deg, rgba(127,29,29,0.18), transparent)",fontSize:18,lineHeight:1.6,color:"var(--bone-dim)",fontFamily:"var(--serif)",fontStyle:"italic"}}>
               {'"We\'re in early days. But early days are exactly when the foundation matters most."'}
             </div>
@@ -204,7 +204,7 @@ function AevisLab() {
             </div>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:14}}>
-            {[{num:"I",title:"AI-Native",icon:<IconSpark/>,body:"Every product we build has AI at its core, not as a feature — as the foundation."},{num:"II",title:"Ship First",icon:<IconBolt/>,body:"We believe in building fast, learning from real users, and iterating relentlessly."},{num:"III",title:"Long Game",icon:<IconInfinity/>,body:"AevisLab isn't a project. It's a company. Built to last."}].map((c:any,idx)=>(
+            {[{num:"I",title:"AI-Native",icon:<IconSpark/>,body:"AI is central to how I build, not bolted on after the fact."},{num:"II",title:"Ship First",icon:<IconBolt/>,body:"I'd rather build a small working version than plan a perfect one."},{num:"III",title:"Long Game",icon:<IconInfinity/>,body:"It's not a finished company yet — it's the thing I keep coming back to."}].map((c:any,idx)=>(
               <div key={idx} style={{padding:24,borderRadius:16,display:"grid",gridTemplateColumns:"auto 1fr",gap:20,alignItems:"start",background:"linear-gradient(180deg, rgba(220,38,38,0.07), rgba(127,29,29,0.03))",border:"1px solid rgba(220,38,38,0.18)"}}>
                 <div style={{width:52,height:52,borderRadius:14,background:"linear-gradient(135deg, rgba(220,38,38,0.35), rgba(127,29,29,0.15))",border:"1px solid rgba(220,38,38,0.4)",display:"flex",alignItems:"center",justifyContent:"center",color:"var(--crimson-200)",position:"relative"}}>
                   {c.icon}<span style={{position:"absolute",bottom:-8,right:-8,fontFamily:"var(--serif)",fontStyle:"italic",fontSize:18,color:"var(--crimson-400)",background:"var(--ink-0)",padding:"0 6px"}}>{c.num}</span>
@@ -234,7 +234,7 @@ function MonoDivider() {
 }
 
 function StatusBadge({ status }: any) {
-  const map: any = {"live":{color:"#22c55e",label:"LIVE",glow:true},"shipped":{color:"#a8a29e",label:"SHIPPED",glow:false},"open-to-work":{color:"#22c55e",label:"OPEN TO WORK",glow:true}};
+  const map: any = {"live":{color:"#22c55e",label:"LIVE",glow:true},"shipped":{color:"#a8a29e",label:"SHIPPED",glow:false},"open-to-work":{color:"#22c55e",label:"OPEN TO WORK",glow:true},"early":{color:"#f59e0b",label:"EARLY STAGE",glow:false}};
   const s = map[status]||map.shipped;
   return <div style={{display:"inline-flex",alignItems:"center",gap:8,fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.2em",color:s.color,padding:"5px 10px",border:`1px solid ${s.color}40`,borderRadius:999,background:`${s.color}10`}}><span style={{width:6,height:6,borderRadius:999,background:s.color,display:"inline-block",boxShadow:s.glow?`0 0 8px ${s.color}`:"none"}}/>{s.label}</div>;
 }
@@ -265,9 +265,9 @@ function ProjectRow({ tag, title, lede, meta, desc, stack, status, accent, href 
 
 function Projects() {
   const projects = [
-    {tag:"FLAGSHIP",title:"AevisLab",lede:"AI-native software studio — building from zero.",meta:["aevislab.com","2025","ACTIVE"],desc:"The umbrella company. Long-term vision: a portfolio of AI-native products built fast, owned forever. Foundation laid in 2025.",stack:["Next.js","Claude API","Vercel"],status:"live",accent:true,href:"https://aevislab.com"},
-    {tag:"MICROSITE",title:"Portfolio v1",lede:"This site — built with Next.js, deployed on Vercel.",meta:["eraycandan.dev","2025"],desc:"A founder's portfolio, not a student page. Built to articulate the bet, not just the resume.",stack:["Next.js","Tailwind","Vercel"],status:"shipped",href:"#top"},
-    {tag:"INCOMING",title:"More coming",lede:"Currently building in public.",meta:["TBA","2025-2026"],desc:"Multiple AI-native tools in early planning under AevisLab. Following the thread of what's broken — fixing it.",stack:["Python","Claude API","Supabase"],status:"open-to-work",href:"https://twitter.com/Erayec_"},
+    {tag:"STUDIO",title:"AevisLab",lede:"An early-stage studio I co-founded — one project in, still finding its shape.",meta:["Co-founded 2025","early stage"],desc:"The long-term idea: a small studio building AI-assisted web and mobile products. Right now it's one project and a lot of groundwork, not a running company yet.",stack:["Next.js","Vercel","AI-Assisted"],status:"early",accent:true,href:"https://github.com/Eray-Candan"},
+    {tag:"MICROSITE",title:"Portfolio v1",lede:"This site — built with Next.js, deployed on Vercel.",meta:["2025"],desc:"My personal site, built to show what I'm actually working on rather than a generic resume page.",stack:["Next.js","Tailwind","Vercel"],status:"shipped",href:"#top"},
+    {tag:"NEXT UP",title:"More coming",lede:"Building in public as a student, one project at a time.",meta:["2025-2026"],desc:"Planning more small AI-assisted tools and practice projects as I keep learning — nothing shipped yet, follow along on Twitter/X.",stack:["Python","Supabase","AI-Assisted"],status:"open-to-work",href:"https://twitter.com/Erayec_"},
   ];
   return (
     <section style={{background:"var(--ink-1)",padding:"140px 0 120px",borderTop:"1px solid var(--ink-line)"}}>
@@ -288,7 +288,7 @@ function Projects() {
 }
 
 function Stack() {
-  const tools = [{name:"Next.js",brand:<BrandNext/>},{name:"React",brand:<BrandReact/>},{name:"Python",brand:<BrandPython/>},{name:"JavaScript",brand:<BrandJS/>},{name:"Tailwind",brand:<BrandTailwind/>},{name:"Vercel",brand:<BrandVercel/>},{name:"Supabase",brand:<BrandSupabase/>},{name:"Claude API",brand:<BrandClaude/>},{name:"GitHub",brand:<IconGitHub size={22}/>}];
+  const tools = [{name:"Next.js",brand:<BrandNext/>},{name:"React",brand:<BrandReact/>},{name:"Python",brand:<BrandPython/>},{name:"JavaScript",brand:<BrandJS/>},{name:"Tailwind",brand:<BrandTailwind/>},{name:"Vercel",brand:<BrandVercel/>},{name:"Supabase",brand:<BrandSupabase/>},{name:"Claude",brand:<BrandClaude/>},{name:"GitHub",brand:<IconGitHub size={22}/>}];
   return (
     <section id="stack" style={{background:"var(--ink-0)",padding:"120px 0",borderTop:"1px solid var(--ink-line)"}}>
       <div style={{maxWidth:1180,margin:"0 auto",padding:"0 32px"}}>
